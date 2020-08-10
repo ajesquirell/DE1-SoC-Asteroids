@@ -1,0 +1,33 @@
+-- std_logic_generator.vhd
+
+-- This file was auto-generated as a prototype implementation of a module
+-- created in component editor.  It ties off all outputs to ground and
+-- ignores all inputs.  It needs to be edited to make it do something
+-- useful.
+-- 
+-- This file will not be automatically regenerated.  You should check it in
+-- to your version control system if you want to keep it.
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity std_logic_generator is
+	generic (
+		enable : std_logic := '1'
+	);
+	port (
+		enable           : out std_logic;        --     enable.enable
+		clock_sink_clk   : in  std_logic := '0'; -- clock_sink.clk
+		reset_sink_reset : in  std_logic := '0'  -- reset_sink.reset
+	);
+end entity std_logic_generator;
+
+architecture rtl of std_logic_generator is
+begin
+
+	-- TODO: Auto-generated HDL template
+
+	enable <= '0';
+
+end architecture rtl; -- of std_logic_generator
